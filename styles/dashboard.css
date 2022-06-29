@@ -1,0 +1,36 @@
+body{
+    background: rgb(137, 137, 243);
+    padding: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+section h1{
+    margin: 10px 70px;
+}
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 15px;
+
+}
+.insights div{
+    background-color: aliceblue;
+    
+    
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}

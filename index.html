@@ -1,28 +1,49 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login in</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-</head>
-<body>
-    <form>
-        <div class="top">
-            <div><h1>Reja</h1></div>
-            <a href="#">Sign up</a>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="login_form">
+      <div class="top">
+        <div><h1>Reja</h1></div>
+        <a href="#">Sign up</a>
+      </div>
 
-        </div>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="users_email" placeholder="example@gmail.com">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="users_password">
-        <button id="login_btn">Login</button>
-        <a href="recreate_password">Don't have account?Sign up</a>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="users_email"
+        placeholder="example@gmail.com"
+      />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="users_password" />
+      <button id="login_btn">
+        <a href="./pages/dashboard.html">Login in</a>
+      </button>
+      <a href="recreate_password">Don't have account?Sign up</a>
     </form>
-</body>
+    <Script>
+        const  login_btn = document.getElementById('login_btn');
+        const login_form = document.getElementById('login_form')
+        const formData = new FormData(this)
+
+        console.log(formData)
+
+        login_btn.addEventListener('click', function (e){
+            e.preventDefault();
+            
+        })
+    </Script>
+  </body>
 </html>
