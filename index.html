@@ -19,31 +19,20 @@
         <a href="#">Sign up</a>
       </div>
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="users_email"
-        placeholder="example@gmail.com"
-      />
+      <label for="name">Name</label>
+      <input type="text" id="name" name="username" value="test@reja.ai" />
       <label for="password">Password</label>
-      <input type="password" id="password" name="users_password" />
-      <button id="login_btn">
-        <a href="./pages/dashboard.html">Login in</a>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        value="demopassword"
+      />
+      <button id="submit" type="submit">
+        <a href=''>Log in</a>
       </button>
       <a href="recreate_password">Don't have account?Sign up</a>
     </form>
-    <Script>
-        const  login_btn = document.getElementById('login_btn');
-        const login_form = document.getElementById('login_form')
-        const formData = new FormData(this)
-
-        console.log(formData)
-
-        login_btn.addEventListener('click', function (e){
-            e.preventDefault();
-            
-        })
-    </Script>
+    <script src="./scripts/login.js"></script>
   </body>
 </html>
