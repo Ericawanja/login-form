@@ -78,17 +78,3 @@ a{
 a:hover{
     font-size: 18px;
 }
-/*form:before{
-    content: '';
-    position: absolute;
-    background: rgb(96, 96, 119);
-    height: 200px;
-    width: 200px;
-    opacity: .5;
-    z-index: -1;
-    border-radius: 50%;
-    bottom: 3%;
-    right: 6%;
-
-
-}*/
