@@ -29,7 +29,6 @@ form{
     margin: 15px;
 }
 .top h1{
-    font-size: 26px;
     letter-spacing: 2;
     color: rgb(209, 182, 231);
 }
@@ -38,7 +37,7 @@ form{
 }
 
 label{
-    font-size: 20px;
+    
     color: white;
     margin-left: 10%;
     opacity: 0.8;
@@ -49,11 +48,9 @@ input{
     margin: 5% auto;
     background: transparent;
     color: white;
-    border-bottom: 1px solid rgba(255,255, 255, 0.06);
+    border-bottom: 1px solid rgba(255,255, 255, 0.6);
 }
-input:hover{
-    
-}
+
 button{
     
     margin: 3% auto;
@@ -62,12 +59,15 @@ button{
     color: white;
     border-radius: 20px;
     opacity: .7;
-    font-size: 15px;
+    font-size: 18px;
     box-shadow: 3px 3px 5px rgba(31,38, 135, .37);
     border-left: 1px solid rgba(255,255, 255, 0.3);
     border-top: 1px solid rgba(255,255, 255, 0.3);
     cursor: pointer;
 
+}
+button:hover{
+    font-size: 20px;
 }
 a{
     color: white;
@@ -77,4 +77,30 @@ a{
 }
 a:hover{
     font-size: 18px;
+    color: rgb(234, 173, 173);
 }
+
+/*@media screen and (){
+    form{
+        height: 80%;
+        width: 80%;
+    }
+    .top{
+        font-size: 2.2rem;
+        padding: 1.2rem 1.4rem;
+    }
+    label {
+        font-size: 2.4rem;
+    }
+    input{
+        font-size: 2.4rem;
+    }
+    button{
+        font-size: 44px;
+        padding: 1.2rem;
+
+    }
+    a{
+        font-size: 34px;
+    }
+}*/

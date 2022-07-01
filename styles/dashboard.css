@@ -1,25 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background: rgb(247, 247, 251);
-    font-family: poppins, sans-serif;
-    
-
-    
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    background: rgba(229, 229, 253, 0.4);
-    border-bottom: 1px solid rgb(219, 219, 224, 0.1) ;
-    padding: 1.5rem 7rem;
-
-}
-header div{
-    display: block;
+* {
+  padding: 0;
+  margin: 0;
 }
 a{
     text-decoration: none;
@@ -27,106 +8,143 @@ a{
     cursor: pointer;
     font-size: 1.2rem;
 }
+body {
+  background: rgb(247, 247, 251);
+  font-family: poppins, sans-serif;
+}
+/***********************Header********************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: rgba(229, 229, 253, 0.4);
+  border-bottom: 1px solid rgb(219, 219, 224, 0.1);
+  padding: 1.5rem 7rem;
+}
+header a{
+    color: rgb(166, 169, 172);
+}
+
 /*******************Data summary****************************/
 section {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
-section h1{
-    padding: 1.5rem;
+section h1 {
+  padding: 1.5rem;
 }
-.data_summary{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap: 15px;
-   width: 80%;
-   
-   margin: auto;
-   text-align: center;
-}
-.data_summary>div{
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem;
-    border-radius: 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.data_summary>div:hover{
+.data_summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 80%;
 
-    background: transparent;
+  margin: auto;
+  text-align: center;
 }
-.data_summary span i{
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 10%;
-    color:white;
-    
+.data_summary > div {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.data_customer_details span i{
-  
-    background:maroon;
+.data_summary > div:hover {
+  background: transparent;
 }
-.data_transaction_details span i{
-    background: blue;
-
+.data_summary span i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  color: white;
 }
-.data_sales_details span i{
-    background-color: brown;
+.data_customer_details span i {
+  background: maroon;
 }
-.data_summary .value{
-    margin: 1.8rem 0 1rem;
-    font-weight: 900;
-    font-size: 1.2rem;
-    transition: all 300ms ease;
+.data_transaction_details span i {
+  background: blue;
 }
-.data_summary .title{
-    font-size:1.4rem ;
+.data_sales_details span i {
+  background-color: brown;
+}
+.data_summary .value {
+  margin: 1.8rem 0 1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition: all 300ms ease;
+}
+.data_summary .title {
+  font-size: 1.4rem;
 }
 /***********************Product list*********************************/
-.products_list{
-    width: 80%;
-    margin: auto;
-    
+.products_list {
+  width: 80%;
+  margin: auto;
 }
-.products_list h3{
-    margin: 2.8rem;
-    font-size: 1.4rem;
-
+.products_list h3 {
+  margin: 2.8rem;
+  font-size: 1.4rem;
 }
-table{
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
-    padding: 1.2rem ;
-    transition: all 300ms ease;
-    border-radius: 1.7rem;  
-    text-transform: capitalize;
-    width: 100%;
-    margin-bottom: 1.5rem;
+table {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding: 1.2rem;
+  transition: all 300ms ease;
+  border-radius: 1.7rem;
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
-table:hover{
-    background: transparent;
+table:hover {
+  background: transparent;
 }
-thead{
-    padding-bottom:5px ;
-    font-size: 20px;
-    
+thead {
+  padding-bottom: 5px;
+  font-size: 20px;
 }
-table tbody td{
-    height: 1.5rem;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(132, 139, 200, 0.08);
-    color: rgb(118, 122, 125);
-    padding: 0.4rem 0;
+table tbody td {
+  height: 1.5rem;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(132, 139, 200, 0.08);
+  color: rgb(118, 122, 125);
+  padding: 0.4rem 0;
 }
 table tbody tr:last-child td {
-    border: none;
-  }
-  table tbody tr td:first-child{
-    text-align: start;
-  }
-  tr:nth-child(even) {
-    background-color: rgba(248, 249, 253, 0.955);
+  border: none;
+}
+table tbody tr td:first-child {
+  text-align: start;
+}
+tr:nth-child(even) {
+  background-color: rgba(248, 249, 253, 0.955);
+}
+/*************************Show All*************************************************/
+.hide {
+  display: none;
+}
+.show_all {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  color: blue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+ .data_summary{
+    grid-template-columns: 1fr;
+ }
+ .products_list{
+    width: 95%;
+}
+}
+@media  screen and (max-width: 450px) {
+    header a{
+        display: none;
+    }
+
+    
 }
