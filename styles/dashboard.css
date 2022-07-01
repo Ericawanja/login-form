@@ -122,16 +122,7 @@ tr:nth-child(even) {
   background-color: rgba(248, 249, 253, 0.955);
 }
 /*************************Show All*************************************************/
-.hide {
-  display: none;
-}
-.show_all {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  color: blue;
-  cursor: pointer;
-}
+
 
 @media screen and (max-width: 600px){
  .data_summary{
